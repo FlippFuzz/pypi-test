@@ -1,0 +1,22 @@
+[project]
+name = "ff-test"
+version = "0.0.1"
+authors = [
+  { name="FlippFuzz" },
+]
+description = "A project using the Gemini API"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+]
+
+[project.urls]
+"Homepage" = "https://github.com/FlippFuzz/pypi-test"
+"Bug Tracker" = "https://github.com/FlippFuzz/pypi-test/issues"
+
+[project.scripts]
+ff-test = "ff_test.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
